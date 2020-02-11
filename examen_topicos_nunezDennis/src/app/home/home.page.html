@@ -1,0 +1,90 @@
+<div class="container">
+  <br>
+  <br>
+  <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <form (submit)="submitLocation(cityName)">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="City Name" #cityName>
+              </div>
+              <button class="btn btn-primary btn-block mt-2">buscar</button>
+            </form>
+          </div>
+          <div class="col-sm">
+            <div *ngIf="weather" class="card card-body">
+              <p>Temperatura: {{weather.main.temp}}</p>
+              <p>Humedad: {{weather.main.humidity}}</p>
+              <p>Descripcion: {{weather.weather[0].description}}</p>
+            </div>
+          </div>
+        </div>
+  </div>
+
+  <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <form (submit)="submitLocation1(cityName1)">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="City Name" #cityName1>
+              </div>
+              <button class="btn btn-primary btn-block mt-2">buscar</button>
+            </form>
+          </div>
+          <div class="col-sm">
+            <div *ngIf="weather1" class="card card-body">
+              <p>Temperatura: {{weather1.main.temp}}</p>
+              <p>Humedad: {{weather1.main.humidity}}</p>
+              <p>Descripcion: {{weather1.weather[0].description}}</p>
+            </div>
+          </div>
+        </div>
+  </div>
+
+  <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                  <form (submit)="submitLocation2(cityName2)">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="City Name" #cityName2>
+                    </div>
+                    <button class="btn btn-primary btn-block mt-2">buscar</button>
+                  </form>
+                </div>
+                <div class="col-sm">
+                  <div *ngIf="weather2" class="card card-body">
+                    <p>Temperatura: {{weather2.main.temp}}</p>
+                    <p>Humedad: {{weather2.main.humidity}}</p>
+                    <p>Descripcion: {{weather2.weather[0].description}}</p>
+                  </div>
+                </div>
+              </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <form (submit)="submitLocation3(cityName3)">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="City Name" #cityName3>
+          </div>
+          <button class="btn btn-primary btn-block mt-2">buscar</button>
+        </form>
+      </div>
+      <div class="col-sm">
+        <div *ngIf="weather3" class="card card-body">
+          <p>Temperatura: {{weather3.main.temp}}</p>
+          <p>Humedad: {{weather3.main.humidity}}</p>
+          <p>Descripcion: {{weather3.weather[0].description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+   
+  <ion-button style="margin-top: 250px; margin-left: 20px;" class="logout" size="large" (click)="onLogout()">Logout
+  </ion-button>
+</div>
+
+
+

@@ -1,0 +1,8 @@
+{
+  "appId": "examen.topicos.com",
+  "appName": "examentopicos",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}
